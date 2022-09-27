@@ -1,0 +1,126 @@
+<html>
+
+<head>
+	<title>Contact</title>
+	<style>
+		body{
+			margin:0;
+			font-family: Garamond;
+			color: white;
+			background-color: #20594F;
+			text-align: center;
+
+		}
+		input[type=text], select, textarea {
+  			width: 35%;
+  			padding: 12px;
+  			border: 1px solid #ccc;
+  			margin-top: 6px;
+  			margin-bottom: 16px;
+  			resize: vertical;
+		}
+		input[type=submit] {
+  			font-family:Garamond;
+  			font-size: 15;
+  			background-color: #13342E;
+  			color: white;
+  			padding: 12px 20px;
+  			border: none;
+  			cursor: pointer;
+		}
+		input[type=submit]:hover {
+  			background-color: #3E8579;
+  			color:#BFDFD6;
+		}
+		.row:after {
+  			content: "";
+  			display: table;
+  			clear: both;
+		}
+		@media screen and (max-width: 600px) {
+  		.column, input[type=submit] {
+    		width: 100%;
+    		margin-top: 0;
+  		}
+	}
+
+		.topnav {
+  			background-color: white;
+  			overflow: hidden;
+		}
+
+		.topnav a {
+  			float: left;
+  			color: #20594F;
+ 	 		text-align: center;
+  			padding: 14px 16px;
+  			text-decoration: none;
+  			font-size: 17px;
+		}
+		.topnav a:hover {
+  			background-color: #3E8579;
+  			color: #BFDFD6;
+		}
+		.topnav a.active {
+  			background-color: #13342E;
+  			color: white;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="aboutMe.html">About Me</a>
+		<a href="myExperience.html">Experience</a>
+		<a class="active" href="contactMe.html">Contact</a>
+	</div>	
+
+
+	<div class="container">
+  		<div style="text-align:center">
+    		<h1>Contact Me</h1>
+  		</div>
+
+  	<div class="hero-image">
+ 		<div class="hero-text">
+
+
+	    	<div class="column">
+	      		<form action="submit.html">
+	        		<label for="fname">First Name</label>
+	        		<br>
+	        		<input type="text" id="fname" name="firstname" placeholder="Your name..">
+	        		<br>
+	        		<label for="lname">Last Name</label>
+	        		<br>
+	        		<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+	        		<br>
+	        		<label for="country">Country</label>
+	        		<br>
+	        		<select id="country" name="country">
+	        		<br>
+	          		<option value="australia">Australia</option>
+	          		<option value="canada">Canada</option>
+	          		<option value="usa">USA</option>
+	        	</select>
+	        	<br>
+	        	<label for="subject">Subject</label>
+	        	<br>
+	        	<textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+	        	<br>
+	        	
+	        	<input type="submit" value="Submit">
+	      		</form>
+	      	</div>
+	    	</div>
+	    </div>
+	</div>
+
+
+
+</body>
+
+</html>
